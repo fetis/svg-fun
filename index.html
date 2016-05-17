@@ -1,186 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+  <title>Having fun with SVG</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
-	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
-	</header>
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
-	</section>
-	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
-	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</section>
-	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
-	<div class="progress"></div>
-	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+  <header class="caption">
+    <h1>Having fun with SVG</h1>
+    <p>Sergey Fetiskin, Frontend engineer @Rocket-internet</p>
+  </header>
+
+  <section class="slide">
+    <h2>Having fun with SVG</h2>
+    <p>Sergey Fetiskin<br>
+      Frontend engineer @Rocket-internet
+    </p>
+    <img src="pictures/SVG_logo.svg" alt="" class="place bottom" width="200" height="200">
+  </section>
+
+  <section class="slide">
+    <h2>Some facts</h2>
+    <ul>
+      <li>XML-based vector graphics</li>
+      <li>Developed since 1999 (17 years!)</li>
+      <li>Was abanondned until 2011 (Thanks to Steeve Jobs for "No flash")</li>
+      <li>Latest release 16 August 2011, SVG 1.1 (Second Edition)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>Vector is vector</h2>
+    <img class="next" src="pictures/homer.svg" width="300">
+    <img class="next" src="pictures/homer.svg" width="200">
+    <img class="next" src="pictures/homer.svg" width="100">
+  </section>
+
+  <section class="slide">
+    <h2>Effects for HTML</h2>
+    <svg height=0>
+      <clipPath id="clip">
+        <path fill="#FFF" fill-rule="nonzero" transform="matrix(0.994208,-0.10747306,0.10747306,0.994208,-427.61212,-59.544573)" stroke="#000" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.10000002" d="m551.43,292.36-54.137-32.525-57.484,26.158,14.204-61.538-42.641-46.587,62.915-5.5076,31.131-54.95,24.68,58.134,61.881,12.626-47.662,41.436z"/>
+      </clipPath>
+      <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+        <linearGradient id="g" gradientUnits="objectBoundingBox" x2="0" y2="1">
+          <stop stop-color="white" offset="0"/>
+          <stop stop-color="white" stop-opacity="0" offset="1"/>
+        </linearGradient>
+        <rect x="0" y="0" width="1" height="0.6" fill="url(#g)"/>
+      </mask>
+      <filter id="filter" x="0" y="0" width="100" height="100">
+        <feGaussianBlur stdDeviation="1"/>
+      </filter>
+    </svg>
+
+    <style type="text/css">
+      .html-effect {
+        font-size: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 30%;
+        float: left;
+      }
+
+      .html-effect:hover {
+        clip-path: none !important;
+        mask: none !important;
+        filter: none !important;
+      }
+
+    </style>
+    <div>
+      <div class="html-effect" style="clip-path: url(#clip)">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="html-effect" style="mask: url(#mask)">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="html-effect" style="filter: url(#filter)">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <h2>Mask code</h2>
+
+    <pre><code>
+&lt;svg>
+  &lt;clipPath id="clip">
+    &lt;path fill="#FFF" stroke="#000" stroke-width="1"
+    d="m551.43,292.36-54.137-32.525-57.484,26.158,
+    14.204-61.538-42.641-46.587..."/>
+  &lt;/clipPath>
+&lt;/svg>
+      </code>
+    </pre>
+  </section>
+
+  <section class="slide">
+    <h2>Mask usage</h2>
+
+    <pre><code>
+&lt;div style="<mark>clip-path: url(#clip)</mark>">Lorem...
+    </code></pre>
+    </pre>
+  </section>
+
+  <section class="slide">
+    <h2>Effects for HTML #2</h2>
+    <svg width="700" height="500" class="next">
+      <defs>
+        <filter id="filterExtra">
+          <!-- COLOR -->
+          <feFlood flood-color="#73DCFF" flood-opacity="0.75" result="COLOR-blu" />
+          <feFlood flood-color="#9673FF" flood-opacity="0.4" result="COLOR-red" />
+          <!-- COLOR END -->
+
+          <!-- Texture -->
+          <feTurbulence baseFrequency=".05" type="fractalNoise" numOctaves="3" seed="0" result="Texture_10" />
+          <feColorMatrix type="matrix"
+          values="0 0 0 0 0,
+          0 0 0 0 0,
+          0 0 0 0 0,
+          0 0 0 -2.1 1.1" in="Texture_10"  result="Texture_20" />
+
+          <feColorMatrix result="Texture_30" type="matrix"
+          values="0 0 0 0 0,
+          0 0 0 0 0,
+          0 0 0 0 0,
+          0 0 0 -1.7 1.8" in="Texture_10" />
+          <!-- Texture -->
+
+          <!-- FILL -->
+          <feOffset dx="-3" dy="4" in="SourceAlpha" result="FILL_10"/>
+          <feDisplacementMap scale="17" in="FILL_10" in2="Texture_10" result="FILL_20" />
+          <feComposite operator="in" in="Texture_30" in2 = "FILL_20" result="FILL_40"/>
+          <feComposite operator="in" in="COLOR-blu" in2="FILL_40" result="FILL_50" />
+          <!-- FILL END-->
+
+          <!-- OUTLINE -->
+          <feMorphology operator="dilate" radius="3" in="SourceAlpha" result="OUTLINE_10" />
+          <feComposite operator="out" in="OUTLINE_10" in2 = "SourceAlpha" result="OUTLINE_20" />
+          <feDisplacementMap scale="7" in="OUTLINE_20" in2="Texture_10" result="OUTLINE_30" />
+          <feComposite operator="arithmetic" k2="-1" k3="1" in="Texture_20" in2="OUTLINE_30" result="OUTLINE_40" />
+          <!-- OUTLINE END-->
+
+          <!-- BEVEL OUTLINE -->
+          <feConvolveMatrix order="8,8" divisor="1"
+            kernelMatrix="1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 " in="SourceAlpha" result="BEVEL_10" />
+          <feMorphology operator="dilate" radius="2" in="BEVEL_10" result="BEVEL_20" />
+          <feComposite operator="out" in="BEVEL_20" in2="BEVEL_10" result="BEVEL_30"/>
+          <feDisplacementMap scale="7" in="BEVEL_30" in2="Texture_10" result="BEVEL_40" />
+          <feComposite operator="arithmetic" k2="-1" k3="1" in="Texture_20" in2="BEVEL_40" result="BEVEL_50" />
+          <feOffset dx="-7" dy="-7" in="BEVEL_50" result="BEVEL_60"/>
+          <feComposite operator="out" in="BEVEL_60" in2 = "OUTLINE_10" result="BEVEL_70" />
+          <!-- BEVEL OUTLINE END -->
+
+          <!-- BEVEL FILL -->
+          <feOffset dx="-9" dy="-9" in="BEVEL_10" result="BEVEL-FILL_10"/>
+          <feComposite operator="out" in="BEVEL-FILL_10" in2 = "OUTLINE_10" result="BEVEL-FILL_20" />
+          <feDisplacementMap scale="17" in="BEVEL-FILL_20" in2="Texture_10" result="BEVEL-FILL_30" />
+          <feComposite operator="in" in="COLOR-red" in2="BEVEL-FILL_30" result="BEVEL-FILL_50" /> <!-- -->
+          <!-- BEVEL FILL END-->
+
+          <feMerge  result="merge2">
+           <feMergeNode in="BEVEL-FILL_50" />
+           <feMergeNode in="BEVEL_70" />
+           <feMergeNode in="FILL_50" />
+            <feMergeNode in="OUTLINE_40" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <text style="filter: url(#filterExtra)" x="50" y="140" font-size="100">Scratch!</text>
+    </svg>
+  </section>
+
+  <section class="slide black">
+    <h2>Effects for video</h2>
+    <video style="mask: url(#video)"
+      muted loop
+      src="https://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg" width="500" autoplay></video>
+    <svg height=0>
+      <mask id="video" maskUnits="userSpaceOnUse">
+        <text x="0" y="200" fill="#ffffff" font-size="140"
+        font-family="sans-serif" font-weight="bold">VIDEO</text>
+      </mask>
+    </svg>
+  </section>
+
+  <section class="slide">
+    <h2>Responsive SVG</h2>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 186" width="300">
+      <style>
+        svg * {
+            transition: fill .1s ease-out, opacity .1s ease-out;
+        }
+        @media screen and (max-width: 800px) {
+            #curved_bg { opacity: 0; }
+            #secondary_content, #primary_content { fill: #195463; }
+        }
+        @media screen and (max-width: 600px) {
+            #secondary_content {
+                opacity: 0;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            #inner-circle, #middle-circle {
+                opacity: 0;
+            }
+        }
+      </style>
+      <path id="curved_bg" fill="#195463" d="M181.6 65.8c-3-9.4-0.2-21.8-5.9-29.6 -5.7-7.9-18.5-9-26.3-14.8C141.6 15.8 136.6 4 127.2 1c-9-2.9-20 3.6-30 3.6 -10 0-20.9-6.5-30-3.6 -9.4 3-14.4 14.8-22.2 20.5 -7.9 5.7-20.6 6.9-26.3 14.8 -5.7 7.8-2.9 20.2-5.9 29.6 -2.9 9-12.6 17.4-12.6 27.4 0 10 9.7 18.4 12.6 27.4 3 9.4 0.2 21.8 5.9 29.6 5.7 7.9 18.5 9 26.3 14.7 7.8 5.7 12.8 17.5 22.1 20.5 9 2.9 20-3.6 30-3.6 10 0 21 6.5 30 3.6 9.4-3 14.4-14.8 22.2-20.5 7.9-5.7 20.6-6.9 26.3-14.8 5.7-7.8 2.9-20.2 5.9-29.6 2.9-9 12.6-17.4 12.6-27.4C194.2 83.2 184.5 74.9 181.6 65.8z"/>
+      <g id="primary_content" fill="#ECECEC">
+      <path id="icon" d="M125.7 109.7L125.7 109.7l-1-8.8 0 0 0 0 -6.3 5.3 1.7 0.8c0 0 0.2 8-9.4 8 -9.6 0-10.1-8.5-10.1-8.5V81h10.8 0c0 0 2.3-0.8 2.3-3.1s-2.3-3-2.3-3l-8.3-0.2c2.5-1.8 4.1-4.8 4.1-8.1 0-5.6-4.5-10.1-10.1-10.1 -5.6 0-10.1 4.5-10.1 10.1 0 3.3 1.6 6.3 4.1 8.1L83 74.9c0 0-2.3 0.7-2.3 3S83 81 83 81h10.8v25.5c0 0-0.5 8.5-10.1 8.5 -9.6 0-9.4-8-9.4-8l1.7-0.8 -6.3-5.3 -1 8.8 2.4-1.5c0 0 2 8.9 11.1 12.6 9.1 3.7 13.2 5.9 14.9 9.5v0.1c0 0 0 0 0 0 0 0 0 0 0 0v0c0 0 0 0 0 0 0 0 0 0 0 0v0c0 0 0 0 0 0v-0.1c1.8-3.6 5.9-5.8 14.9-9.5 9-3.7 11.1-12.4 11.1-12.6L125.7 109.7 125.7 109.7zM93.1 66.5c0-2.3 1.9-4.2 4.2-4.2 2.3 0 4.2 1.9 4.2 4.2 0 2.3-1.9 4.2-4.2 4.2v0C94.9 70.7 93.1 68.8 93.1 66.5z"/>
+        <path id="inner-circle" d="M97.2 140c-25.7 0-46.6-20.9-46.6-46.6 0-25.7 20.9-46.6 46.6-46.6 25.7 0 46.6 20.9 46.6 46.6C143.8 119.1 122.9 140 97.2 140zM97.2 48.8c-24.6 0-44.6 20-44.6 44.6 0 24.6 20 44.6 44.6 44.6 24.6 0 44.6-20 44.6-44.6C141.8 68.8 121.8 48.8 97.2 48.8z"/>
+      </g><!-- /primary content -->
+      <g id="secondary_content" fill="#ECECEC">
+        <path id="middle-circle" d="M97.2 145.8c-28.9 0-52.4-23.5-52.4-52.4 0-28.9 23.5-52.4 52.4-52.4 28.9 0 52.4 23.5 52.4 52.4C149.6 122.3 126.1 145.8 97.2 145.8zM97.2 42.1c-28.3 0-51.4 23-51.4 51.4s23 51.4 51.4 51.4c28.3 0 51.4-23 51.4-51.4S125.6 42.1 97.2 42.1z"/>
+      <path id="bottom-text" d="M49.9 122.8l-0.2 0.8 -2.6 1.3 -0.5-1 2.1-1.1 -0.9-1.8 -6.3 3.1 1.1 2.3 -0.2 0.8 -7.3 3.7 -0.8-0.3 -1.4-2.8 0.3-0.8 2.6-1.3 0.5 1 -2.1 1.1 0.9 1.8 6.3-3.1 -1.1-2.3 0.3-0.8 7.3-3.7 0.8 0.3L49.9 122.8zM37.7 135.6l13-8.9 -0.3-0.5 0.9-0.7 1.3 1.9 -0.9 0.7 -0.3-0.5 -12.5 8.6 1.1 1.6 12.5-8.6 -0.3-0.5 1-0.7 1.3 1.9 -0.9 0.7 -0.3-0.5 -13 8.9 -0.8-0.1 -1.8-2.6L37.7 135.6zM52.8 137.4l-7.5 7.1 0.5 0.5 -0.8 0.8 -1.7-1.8 0.8-0.8 0.5 0.5 11-10.5 -0.5-0.5 0.8-0.8 0.9 0.9 0.1 0.7 -4.5 6.5 6.7-4.2 0.7 0.1 0.9 0.9 -0.8 0.8 -0.5-0.5 -11 10.5 0.5 0.5 -0.8 0.8 -1.7-1.8 0.8-0.8 0.5 0.5 7.5-7.1 -4.4 2.7 -0.8-0.8L52.8 137.4zM60.2 144.3l-6.2 8.3 0.5 0.4 -0.7 0.9 -2-1.5 0.7-0.9 0.5 0.4 9.1-12.2 -0.5-0.4 0.7-0.9 1 0.8 0.2 0.7 -3.3 7.2 5.9-5.2 0.7 0 1 0.8 -0.7 0.9 -0.5-0.4 -9.1 12.2 0.5 0.4 -0.7 0.9 -2-1.5 0.7-0.9 0.5 0.4 6.2-8.3 -3.9 3.4L58 149 60.2 144.3zM65.9 161.5l-4.4-2.3 0.5-1 0.6 0.3 7.2-13.4 -0.6-0.3 0.5-1 4.4 2.3 -1.7 3.1 -1-0.5 1.1-2.1 -1.7-0.9 -3.3 6.2 1 0.5 0.7-1.3 1 0.5 -1.9 3.5 -1-0.5 0.7-1.3 -1-0.5 -3.3 6.2 1.7 0.9 1.1-2.1 1 0.5L65.9 161.5zM75.6 164.2l-0.4 1.1 -1.1-0.4 -0.3-0.7 2.6-7.1 -1.8-0.7 -2.4 6.6 0.6 0.2 -0.4 1.1 -2.2-0.8 0.4-1.1 0.6 0.2 5.2-14.3 -0.7-0.3 0.4-1.1 4.2 1.5 0.4 0.7 -2.6 7.2 -0.7 0.3 0.4 0.8 -2.4 6.6L75.6 164.2zM79.2 149.3l-1.8-0.7 -2.4 6.6 1.8 0.7L79.2 149.3zM90.4 168.4l-3.1-0.4 -0.5-0.7 1.9-16.3 0.6-0.5 3.1 0.4 0.5 0.6L91 167.8 90.4 168.4zM91.7 152l-1.9-0.2L88 166.9l1.9 0.2L91.7 152zM98 167.5l0.7 0 0 1.2 -2.5 0.1 0-1.2 0.7 0 -0.5-15.2 -0.7 0 0-1.2 1.2 0 0.6 0.4 3.7 12.1 -0.4-11.5 -0.7 0 0-1.2 2.5-0.1 0 1.2 -0.7 0 0.5 15.2 0.7 0 0 1.2 -1.2 0 -0.6-0.4 -3.7-12.1L98 167.5zM109.9 149.7l5.3-1.6 1 3.4 -1.1 0.3 -0.7-2.3 -1 0.3 4.4 14.6 0.6-0.2 0.3 1.1 -2.2 0.7 -0.3-1.1 0.6-0.2 -4.4-14.6 -1 0.3 0.7 2.3 -1.1 0.3L109.9 149.7zM122.3 146.3l6.5 13.8 0.5-0.3 0.5 1 -2.1 1 -0.5-1 0.5-0.3 -3-6.4L123 155l3 6.4 0.5-0.3 0.5 1 -2.1 1 -0.5-1 0.5-0.3 -6.5-13.8 -0.5 0.3 -0.5-1 2.1-1 0.5 1 -0.5 0.3 3 6.4 1.8-0.8 -3-6.4 -0.5 0.3 -0.5-1 2.1-1 0.5 1L122.3 146.3zM138 155.9l-4.2 2.7 -0.6-1 0.6-0.4 -8.3-12.8 -0.6 0.4 -0.6-1 4.2-2.7 1.9 3 -1 0.6 -1.3-2 -1.6 1.1 3.8 5.9 0.9-0.6 -0.8-1.2 1-0.6 2.2 3.4 -1 0.6 -0.8-1.2 -0.9 0.6 3.8 5.9 1.6-1.1 -1.3-2 1-0.6L138 155.9zM136.9 133.7l0.8 0 2.1 2.1 -0.8 0.8 -1.7-1.6 -1.4 1.4 5 4.9 1.8-1.8 0.8 0 5.9 5.7 0 0.8 -2.2 2.2 -0.8 0 -2.1-2.1 0.8-0.8 1.7 1.7 1.4-1.4 -5-4.9 -1.8 1.8 -0.8 0 -5.9-5.7 0-0.8L136.9 133.7zM155.9 138l-3 4 -0.9-0.7 0.4-0.6 -12.2-9.1 -0.4 0.6 -0.9-0.7 3-4 2.8 2.1 -0.7 0.9 -1.9-1.4 -1.2 1.6 5.6 4.2 0.7-0.9 -1.1-0.9 0.7-0.9 3.2 2.4 -0.7 0.9 -1.1-0.9 -0.7 0.9 5.6 4.2 1.2-1.6 -1.9-1.4 0.7-0.9L155.9 138zM158.4 131.7l0.1-0.3 1 0.5 -1.2 2.2 -1-0.5 0.5-0.9 -12.6-8.7 -0.2 0.4 -1-0.5 1.2-2.2 1 0.5 -0.2 0.4 14.3 5.6 0.5-0.9 1 0.5 -1.2 2.2 -1-0.5 0.1-0.3 -4.6-1.8 -0.9 1.6L158.4 131.7zM154.2 126.9l-6.2-2.4 5.4 3.8L154.2 126.9z"/>
+      <path id="upper-text" d="M50.3 62.5l-2.5 4.3 -1-0.6 0.4-0.6 -13.1-7.8 -0.4 0.6 -1-0.6 2.5-4.3 3 1.8 -0.6 1 -2-1.2 -1 1.7 6 3.6 0.6-0.9L40 58.8l0.6-1 3.5 2.1 -0.6 1 -1.2-0.7L41.7 61l6 3.6 1-1.7 -2.1-1.2 0.6-1L50.3 62.5zM51.7 58.6l0.4-0.5 0.9 0.7 -1.6 2L50.6 60l0.4-0.5 -11.8-9.6 -0.4 0.5 -0.9-0.7 0.8-1 0.7-0.2 11.5 5.1 -8.9-7.2 -0.4 0.5 -0.9-0.7 1.6-2 0.9 0.7 -0.4 0.5 11.8 9.6 0.4-0.5 0.9 0.7 -0.8 1 -0.7 0.2 -11.5-5.1L51.7 58.6zM55.9 50.3l1.6 1.8 1.4-1.3L48.7 39.6 48.2 40l-0.8-0.8 1.9-1.7 0.8 0.8 -0.5 0.5 10.7 11.6 0 0.8 -2.3 2.1 -0.8-0.1 -2-2.2L55.9 50.3zM66.2 46.6l-2.5 1.8 -0.8-0.2 -9.4-13.4 0.1-0.8 2.5-1.8 0.8 0.1 9.4 13.4L66.2 46.6zM56.3 33.5l-1.6 1.1 8.8 12.4 1.6-1.1L56.3 33.5zM64.5 27.4l2.2-1.1 0.5 1 -0.7 0.4 1.6 7.8 3.4 6.7 0.5-0.3 0.5 1 -2.1 1.1 -0.5-1 0.5-0.3 -3.4-6.7L61.9 30l-0.7 0.4 -0.5-1 2.2-1.1 0.5 1 -0.4 0.2 3.8 4.1 -1.2-5.5 -0.5 0.2L64.5 27.4zM85.9 38.4l-4.3 1 -0.3-1.1 0.7-0.2 -3.6-14.8 -0.7 0.2 -0.3-1.1 4.3-1 0.7 0.4 3.8 15.9L85.9 38.4zM81.5 22.6l-1.9 0.5 3.6 14.8 1.9-0.5L81.5 22.6zM93.7 37.3l-5 0.5 -0.1-1.1 0.7-0.1 -1.6-15.1 -0.7 0.1 -0.1-1.1 5-0.5 0.4 3.5 -1.1 0.1 -0.2-2.4 -2 0.2 0.7 7 1.1-0.1 -0.2-1.4 1.1-0.1 0.4 4L91 30.8l-0.2-1.4 -1.1 0.1 0.7 7 2-0.2 -0.3-2.4 1.1-0.1L93.7 37.3zM106.7 20.3l0.5 0.6 -0.3 2.9 -1.1-0.1 0.2-2.4 -2-0.2 -0.7 7 2.5 0.3 0.5 0.6 -0.9 8.1 -0.7 0.5 -3.1-0.3 -0.5-0.6 0.3-2.9 1.1 0.1 -0.3 2.4 2 0.2 0.7-7 -2.5-0.3 -0.5-0.6 0.9-8.1 0.6-0.5L106.7 20.3zM108.5 37.8l3.7-15.3 -0.6-0.1 0.3-1.1 2.3 0.5 -0.3 1.1 -0.6-0.1 -3.6 14.8 1.9 0.5 3.6-14.8 -0.6-0.1 0.3-1.1 2.3 0.5 -0.3 1.1 -0.6-0.1 -3.7 15.3 -0.7 0.4 -3-0.7L108.5 37.8zM117.4 39.7L118 40l-0.4 1.1 -2.3-1 0.4-1.1 0.6 0.3 5.8-14.1 -0.6-0.3 0.4-1.1 1.2 0.5 0.4 0.6 -1.6 12.5 4.3-10.6 -0.6-0.3 0.4-1.1 2.3 1 -0.4 1.1 -0.6-0.3 -5.8 14.1 0.6 0.3 -0.4 1.1 -1.2-0.5 -0.4-0.6 1.6-12.5L117.4 39.7zM135.9 30.7l0.2 0.8 -1.5 2.5 -1-0.6 1.2-2 -1.7-1 -3.6 6.1 2.2 1.3 0.2 0.8 -4.2 7.1 -0.8 0.2 -2.7-1.6 -0.2-0.8 1.5-2.5 1 0.6 -1.2 2.1 1.7 1 3.6-6.1 -2.2-1.3 -0.2-0.8 4.2-7.1 0.8-0.2L135.9 30.7zM143.2 37.3l-9.3 12 0.5 0.4 -0.7 0.9 -1.8-1.4 0.7-0.9 0.5 0.4 4.3-5.6 -1.5-1.2 -4.3 5.6 0.5 0.4 -0.7 0.9 -1.8-1.4 0.7-0.9 0.5 0.4 9.3-12 -0.5-0.4 0.7-0.9 1.8 1.4 -0.7 0.9 -0.5-0.4 -4.3 5.6 1.5 1.2 4.3-5.6 -0.5-0.4 0.7-0.9 1.8 1.4 -0.7 0.9L143.2 37.3zM147.9 41.6l-10.6 11 0.5 0.5 -0.8 0.8 -1.8-1.8 0.8-0.8 0.5 0.5 10.6-11 -0.5-0.5 0.8-0.8 1.8 1.8 -0.8 0.8L147.9 41.6zM140.6 56l0.4 0.5 -0.9 0.7 -1.6-2 0.9-0.7 0.4 0.5 11.8-9.6 -0.4-0.5 0.9-0.7 0.8 1 0 0.7 -7.4 10.2 8.9-7.2 -0.4-0.5 0.9-0.7 1.6 2 -0.9 0.7 -0.4-0.5 -11.8 9.6 0.4 0.5 -0.9 0.7 -0.8-1 0-0.7 7.4-10.2L140.6 56zM146.6 66.8l-2.6-4.3 1-0.6 0.4 0.6 13.1-7.8 -0.4-0.6 1-0.6 2.6 4.3 -3 1.8 -0.6-1 2-1.2 -1-1.7 -6 3.6 0.6 0.9 1.2-0.7 0.6 1 -3.5 2.1 -0.6-1 1.2-0.7 -0.6-0.9 -6 3.6 1 1.7 2.1-1.2 0.6 1L146.6 66.8z"/>
+      <path id="outer-circle" d="M97.2 176.5c-45.8 0-83-37.2-83-83s37.2-83 83-83c45.8 0 83 37.2 83 83S143 176.5 97.2 176.5zM97.2 13.4c-44.1 0-80 35.9-80 80s35.9 80 80 80c44.1 0 80-35.9 80-80S141.4 13.4 97.2 13.4z"/>
+      <circle id="left-dot" cx="31.1" cy="91.5" r="3"/>
+      <circle id="right-dot" cx="163.4" cy="91.5" r="3"/>
+      </g><!-- end secondary content -->
+    </svg>
+
+  </section>
+
+  <section class="slide">
+    <h2>Text along the curve</h2>
+    <svg width="100%" height="100%" viewBox="0 0 1000 300"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <path id="MyPath"
+            d="M 100 200
+               C 200 100 300   0 400 100
+               C 500 200 600 300 700 200
+               C 800 100 900 100 900 100" />
+    </defs>
+
+    <use xlink:href="#MyPath" fill="none" stroke="red"  />
+
+    <text font-family="Verdana" font-size="42.5">
+      <textPath xlink:href="#MyPath">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      </textPath>
+    </text>
+    </svg>
+  </section>
+
+  <section class="slide">
+    <h2 class="shout">Animation</h2>
+  </section>
+
+  <section class="slide">
+    <h2>Animation</h2>
+
+    <svg width="500" height="350">
+      <rect id="rect" width="50" height="50" x="25" y="200" fill="blue"></rect>
+
+      <animate
+               xlink:href="#rect"
+               attributeName="x"
+               from="50"
+               to="425"
+               dur="5s"
+               begin="0s"
+               repeatCount="indefinite"
+               fill="freeze"
+               />
+
+    </svg>
+  </section>
+
+  <section class="slide">
+    <h2>Morphing</h2>
+
+    <svg viewbox="0 0 100 100" width="100">
+      <path fill="#1EB287">
+        <animate
+                 attributeName="d"
+                 dur="1440ms"
+                 repeatCount="indefinite"
+                 keyTimes="0;
+                           .0625;
+                           .208333333;
+                           .3125;
+                           .395833333;
+                           .645833333;
+                           .833333333;
+                           1"
+                 calcMode="spline"
+                 keySplines="0,0,1,1;
+                             .42,0,.58,1;
+                             .42,0,1,1;
+                             0,0,.58,1;
+                             .42,0,.58,1;
+                             .42,0,.58,1;
+                             .42,0,.58,1"
+                 values="M 0,0
+                         C 50,0 50,0 100,0
+                         100,50 100,50 100,100
+                         50,100 50,100 0,100
+                         0,50 0,50 0,0
+                         Z;
+
+                         M 0,0
+                         C 50,0 50,0 100,0
+                         100,50 100,50 100,100
+                         50,100 50,100 0,100
+                         0,50 0,50 0,0
+                         Z;
+
+                         M 50,0
+                         C 75,25 75,25 100,50
+                         75,75 75,75 50,100
+                         25,75 25,75 0,50
+                         25,25 25,25 50,0
+                         Z;
+
+                         M 25,50
+                         C 37.5,25 37.5,25 50,0
+                         75,50 75,50 100,100
+                         50,100 50,100 0,100
+                         12.5,75 12.5,75 25,50
+                         Z;
+
+                         M 25,50
+                         C 37.5,25 37.5,25 50,0
+                         75,50 75,50 100,100
+                         50,100 50,100 0,100
+                         12.5,75 12.5,75 25,50
+                         Z;
+
+                         M 50,0
+                         C 77.6,0 100,22.4 100,50
+                         100,77.6 77.6,100 50,100
+                         22.4,100, 0,77.6, 0,50
+                         0,22.4, 22.4,0, 50,0
+                         Z;
+
+                         M 50,0
+                         C 77.6,0 100,22.4 100,50
+                         100,77.6 77.6,100 50,100
+                         22.4,100, 0,77.6, 0,50
+                         0,22.4, 22.4,0, 50,0
+                         Z;
+
+                         M 100,0
+                         C 100,50 100,50 100,100
+                         50,100 50,100 0,100
+                         0,50 0,50 0,0
+                         50,0 50,0 100,0
+                         Z;"/>
+        <animate
+                 attributeName="fill"
+                 dur="1440ms"
+                 repeatCount="indefinite"
+                 keyTimes="0;
+                           .0625;
+                           .208333333;
+                           .3125;
+                           .395833333;
+                           .645833333;
+                           .833333333;
+                           1"
+                 calcMode="spline"
+                 keySplines="0,0,1,1;
+                             .42,0,.58,1;
+                             .42,0,1,1;
+                             0,0,.58,1;
+                             .42,0,.58,1;
+                             .42,0,.58,1;
+                             .42,0,.58,1"
+                 values="#1eb287;
+                         #1eb287;
+                         #1ca69e;
+                         #188fc2;
+                         #188fc2;
+                         #bb625e;
+                         #ca5f52;
+                         #1eb287;"/>
+      </path>
+    </svg>
+  </section>
+
+  <section class="slide">
+    <h2>Motion path</h2>
+
+    <svg width="500" height="350" viewBox="0 0 500 350">
+      <path id="motionPath" fill="none" stroke="#000000" stroke-miterlimit="10" d="M202.4,58.3c-13.8,0.1-33.3,0.4-44.8,9.2
+      c-14,10.7-26.2,29.2-31.9,45.6c-7.8,22.2-13.5,48-3.5,70.2c12.8,28.2,47.1,43.6,68.8,63.6c19.6,18.1,43.4,26.1,69.5,29.4
+      c21.7,2.7,43.6,3.3,65.4,4.7c19.4,1.3,33.9-7.7,51.2-15.3c24.4-10.7,38.2-44,40.9-68.9c1.8-16.7,3.4-34.9-10.3-46.5
+      c-9.5-8-22.6-8.1-33.2-14.1c-13.7-7.7-27.4-17.2-39.7-26.8c-5.4-4.2-10.4-8.8-15.8-12.9c-4.5-3.5-8.1-8.3-13.2-11
+      c-6.2-3.3-14.3-5.4-20.9-8.2c-5-2.1-9.5-5.2-14.3-7.6c-6.5-3.3-12.1-7.4-19.3-8.9c-6-1.2-12.4-1.3-18.6-1.5
+      C222.5,59,212.5,57.8,202.4,58.3"/>
+
+      <circle id="circle" r="10" cx="0" cy="0" fill="tomato" />
+
+      <animateMotion
+               xlink:href="#circle"
+               dur="5s"
+               begin="0s"
+               fill="freeze"
+               repeatCount="indefinite">
+        <mpath xlink:href="#motionPath" />
+      </animateMotion>
+    </svg>
+
+  </section>
+
+  <section class="slide">
+    <h2>Text animation</h2>
+
+    <svg width="500" height="450" viewBox="0 0 500 450">
+
+      <path id="spiral" transform="translate(150, 185)" stroke-linejoin="miter" d="M57.143,42.093c9.096,8.166-6.519,16.291-13.572,15.119-19.112-3.174-23.452-27.201-16.666-42.262,12.139-26.94,47.166-31.909,70.952-18.214,34.903,20.098,40.603,67.397,19.763,99.643-27.773,42.981-87.721,49.381-128.33,21.311-51.108-35.333-58.224-108.09-22.857-157.02,42.834-59.27,128.48-67.095,185.71-24.405,67.45,50.305,75.977,148.89,25.952,214.4-57.755,75.644-169.3,84.875-243.1,27.5-83.846-65.193-93.782-189.73-29.048-271.79,72.622-92.055,210.16-102.69,300.48-30.595,100.27,80.043,111.61,230.59,32.143,329.17" transform="translate(-0.05797764,3.126158)" stroke="#000" stroke-linecap="butt" stroke-width="1px" fill="none"/>
+
+      <text>
+        <textpath xlink:href="#spiral">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in.
+
+          <animate attributeName="startOffset" from="0%" to ="-400%" begin="0s" dur="15s" repeatCount="indefinite" keyTimes="0;1" calcMode="spline" />
+        </textpath>
+      </text>
+    </svg>
+
+  </section>
+
+  <section class="slide">
+    <h2>CSS Animation</h2>
+    <style type="text/css">
+      @keyframes ufo-big {
+        0%        {opacity: 0}
+        15%, 70%  {opacity: 1}
+        85%, 100% {opacity: 0}
+      }
+
+      @keyframes ufo-big-lights {
+        0%        {fill: #000}
+        20%       {fill: #fbcb43}
+        40%, 100% {fill: #000}
+      }
+
+      .ufo-big-lights-light {
+        animation: ufo-big-lights 2.5s ease infinite;
+      }
+
+      .ufo-big {
+        animation: ufo-big 5s ease infinite;
+      }
+
+      .ufo-big-lights--2 {animation-delay: .2s}
+      .ufo-big-lights--3 {animation-delay: .4s}
+      .ufo-big-lights--4 {animation-delay: .6s}
+      .ufo-big-lights--5 {animation-delay: .8s}
+
+
+    </style>
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 450 250" enable-background="new 0 0 450 250" xml:space="preserve" class="svg ufo-building">
+      <g class="ufo-building-float">
+        <g class="ufo-big">
+          <path class="ufo-big-body" d="M143.1 108.7l-1.3-0.7c-8.5-4.8-16-9-26.3-11.6c0 0 0-0.1 0-0.1c0-7.7-3-14-8.7-18.2 c-4.9-3.6-11.7-5.6-19.5-5.8v-4.7c1.4-0.5 2.4-1.8 2.4-3.3c0-1.9-1.6-3.5-3.5-3.5c-1.9 0-3.5 1.6-3.5 3.5c0 1.5 0.9 2.8 2.3 3.3 v4.7c-7.8 0.2-14.5 2.2-19.4 5.8c-5.7 4.2-8.7 10.5-8.7 18.2c0 0.1 0 0.2 0 0.3c-4.2 1.1-8.3 2.5-12.4 4.3c-5.1 2.2-9.9 4.8-13.9 7 l-1.3 0.7l2.4 2.6h31.5c4.9 5.4 12.6 8.1 23 8.1c10.4 0 18.1-2.7 23-8.1h31.5L143.1 108.7z M86.1 63.2c0.6 0 1.2 0.5 1.2 1.2 c0 0.6-0.5 1.2-1.2 1.2c-0.6 0-1.2-0.5-1.2-1.2C84.9 63.8 85.5 63.2 86.1 63.2z M61.1 86.7c1.3-2.6 3.2-4.9 5.7-6.7 c4.8-3.5 11.4-5.3 19.3-5.3c7.9 0 14.5 1.8 19.3 5.3c2.5 1.8 4.4 4.1 5.7 6.7c1.3 2.7 2.1 5.8 2.1 9.3H59.4H59 C59.1 92.5 59.8 89.4 61.1 86.7z M100.6 114.6c-3.9 1.7-8.8 2.6-14.5 2.6c-5.8 0-10.6-0.9-14.5-2.6c-2-0.9-3.7-1.9-5.2-3.2h39.5 C104.3 112.7 102.6 113.8 100.6 114.6z M33.3 109.1c12-6.6 19.1-9.1 26.4-10.8h53.7c10.1 2.4 17.1 6.1 25.5 10.8H33.3z"/>
+          <g class="ufo-big-lights">
+            <path class="ufo-big-lights-light ufo-big-lights-light--1" d="M64.7 94.4c1.9 0 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5s-3.5 1.6-3.5 3.5C61.2 92.8 62.8 94.4 64.7 94.4z M64.7 89.7c0.6 0 1.2 0.5 1.2 1.2c0 0.6-0.5 1.2-1.2 1.2c-0.6 0-1.2-0.5-1.2-1.2C63.6 90.3 64.1 89.7 64.7 89.7z"/>
+            <path class="ufo-big-lights-light ufo-big-lights-light--2" d="M75.4 94.4c1.9 0 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5c-1.9 0-3.5 1.6-3.5 3.5 C71.9 92.8 73.5 94.4 75.4 94.4z M75.4 89.7c0.6 0 1.2 0.5 1.2 1.2c0 0.6-0.5 1.2-1.2 1.2c-0.6 0-1.2-0.5-1.2-1.2 C74.2 90.3 74.8 89.7 75.4 89.7z"/>
+            <path class="ufo-big-lights-light ufo-big-lights-light--3" d="M86.1 94.4c1.9 0 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5c-1.9 0-3.5 1.6-3.5 3.5 C82.6 92.8 84.2 94.4 86.1 94.4z M86.1 89.7c0.6 0 1.2 0.5 1.2 1.2c0 0.6-0.5 1.2-1.2 1.2c-0.6 0-1.2-0.5-1.2-1.2 C84.9 90.3 85.5 89.7 86.1 89.7z"/>
+            <path class="ufo-big-lights-light ufo-big-lights-light--4" d="M96.8 94.4c1.9 0 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5c-1.9 0-3.5 1.6-3.5 3.5 C93.3 92.8 94.9 94.4 96.8 94.4z M96.8 89.7c0.6 0 1.2 0.5 1.2 1.2c0 0.6-0.5 1.2-1.2 1.2c-0.6 0-1.2-0.5-1.2-1.2 C95.6 90.3 96.1 89.7 96.8 89.7z"/>
+            <path class="ufo-big-lights-light ufo-big-lights-light--5" d="M107.5 94.4c1.9 0 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5c-1.9 0-3.5 1.6-3.5 3.5 C104 92.8 105.6 94.4 107.5 94.4z M107.5 89.7c0.6 0 1.2 0.5 1.2 1.2c0 0.6-0.5 1.2-1.2 1.2c-0.6 0-1.2-0.5-1.2-1.2 C106.3 90.3 106.8 89.7 107.5 89.7z"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </section>
+
+
+
+  <section class="slide">
+    <h2>Interactivity</h2>
+
+    <svg>
+      <style type="text/css">
+        .button {
+          cursor: pointer;
+        }
+
+        .button:hover rect {
+          fill: #dd0000;
+        }
+      </style>
+      <script type="text/ecmascript">
+      <![CDATA[
+        function buttonClick(evt)
+        {
+          alert('Hi from SVG!');
+        }
+      ]]></script>
+
+      <g onmouseup="buttonClick(evt)" class="button">
+        <rect x="20" y="1" rx="5" ry="5"
+              width="152" height="50" fill="red"/>
+        <text x="25" y="35" fill="white">Click me</text>
+      </g>
+    </svg>
+  </section>
+
+  <section class="slide" id="jsdemo">
+    <h2>JavaScript libraries</h2>
+    <p><a href="coffee.html" target="_blank">Coffee machine demo</a></p>
+    <p><a target="_blank" href="http://bl.ocks.org/mbostock/4062006">Chord diagram</a></p>
+  </section>
+
+  <section class="slide">
+    <h2>Browsers support (Basic)</h2>
+    <p><img class="place" src="pictures/svg_basic_support.png" alt="SVG basic support" width="800"></p>
+  </section>
+
+  <section class="slide">
+    <h2>Browsers support (Overall)</h2>
+    <p><img src="pictures/svg_support.png" alt="SVG support" width="800"></p>
+  </section>
+
+  <section class="slide">
+    <h2>More demos</h2>
+    <ul>
+      <li><a href="https://www.smashingmagazine.com/2015/05/why-the-svg-filter-is-awesome/">The Art Of The SVG Filter And Why It Is Awesome</a></li>
+      <li><a href="http://snapsvg.io/demos/">Snap.svg Demos</a></li>
+      <li><a href="https://github.com/d3/d3/wiki/Gallery">D3 Gallery</a></li>
+      <li><a href="http://www.hongkiat.com/blog/svg-animations/">30 SVG Animations</a></li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2 class="shout">Questions?</h2>
+  </section>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"></div>
+  <script src="node_modules/shower-core/shower.min.js"></script>
+  <!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+  <!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
 </html>
